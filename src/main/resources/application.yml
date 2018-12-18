@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: Zipkin Trace
+  # RabbitMQ地址
+  rabbitmq:
+    host: "148.70.10.229"
+    port: 5672
+    username: "blogmanager"
+    password: "123456"
+    queue: "zipkin"
+server:
+  port: 9411
+
+security:
+  basic:
+    enabled: true
+  user:
+    name: blogmanager
+    password: 123456
