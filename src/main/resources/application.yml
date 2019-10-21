@@ -1,6 +1,8 @@
 spring:
   application:
     name: Zipkin Trace
+  profiles:
+    active: "default"
 
 server:
   port: 9411
@@ -9,7 +11,7 @@ server:
 zipkin:
   collector:
     rabbitmq:
-      host: "148.70.10.229"
+      host: "106.15.72.196"
       port: 5672
       username: "blogmanager"
       password: "123456"
